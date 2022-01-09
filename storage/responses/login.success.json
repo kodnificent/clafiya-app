@@ -1,0 +1,12 @@
+{
+    "message": "Login successful.",
+    "data": {
+        "access_token": "your-generated-access-token",
+        "profile": {
+            "id": 1,
+            "email": "kodnificent@example.com",
+            "name": "Kodnificent",
+            "email_verified": true
+        }
+    }
+}
