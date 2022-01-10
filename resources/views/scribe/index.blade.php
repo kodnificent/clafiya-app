@@ -26,7 +26,7 @@
             </style>
 
     <script>
-        var baseUrl = "http://localhost:8888";
+        var baseUrl = "https://clafiya.kodnificent.xyz";
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
@@ -89,7 +89,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: January 9 2022</li>
+        <li>Last updated: January 10 2022</li>
     </ul>
 </div>
 
@@ -103,10 +103,10 @@ You can switch the language used with the tabs at the top right (or from the nav
 <blockquote>
 <p>Base URL</p>
 </blockquote>
-<pre><code class="language-yaml">http://localhost:8888</code></pre>
+<pre><code class="language-yaml">https://clafiya.kodnificent.xyz</code></pre>
 
         <h1 id="authenticating-requests">Authenticating requests</h1>
-<p>To authenticate requests, include an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer {YOUR_AUTH_KEY}"</code></strong>.</p>
+<p>Authenticate requests to this API's endpoints by sending an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer {YOUR_AUTH_KEY}"</code></strong>.</p>
 <p>All authenticated endpoints are marked with a <code>requires authentication</code> badge in the documentation below.</p>
 <p>You can retrieve your token via the login endpoint.</p>
 
@@ -127,19 +127,19 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8888/api/auth/login" \
+    "https://clafiya.kodnificent.xyz/api/auth/login" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"kerluke.jalen@example.org\",
-    \"password\": \"minima\"
+    \"email\": \"uwilkinson@example.com\",
+    \"password\": \"repellendus\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8888/api/auth/login"
+    "https://clafiya.kodnificent.xyz/api/auth/login"
 );
 
 const headers = {
@@ -148,8 +148,8 @@ const headers = {
 };
 
 let body = {
-    "email": "kerluke.jalen@example.org",
-    "password": "minima"
+    "email": "uwilkinson@example.com",
+    "password": "repellendus"
 };
 
 fetch(url, {
@@ -225,7 +225,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-login"
-               value="kerluke.jalen@example.org"
+               value="uwilkinson@example.com"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -235,7 +235,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-login"
-               value="minima"
+               value="repellendus"
                data-component="body" hidden>
     <br>
 
