@@ -12,3 +12,6 @@ Please find the api documentation at https://clafiya.kodnificent.xyz/docs. A def
 Use `hello@example.com` as email and `password` as password to test the login endpoint.
 
 Feel free to contact `mbamaravictor@gmail.com` if you have any questions.
+
+### Testing
+Run `php artisan test` for testing.
